@@ -1,5 +1,5 @@
 import Home from "./pages/Home/Home";
-import Shop from "./pages/Shop";
+import Shop from "./pages/Shop/Shop";
 import CartPage from "./pages/CartPage";
 
 const routes = [
