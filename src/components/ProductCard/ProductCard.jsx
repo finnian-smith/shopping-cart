@@ -1,6 +1,7 @@
 /* eslint-disable react/prop-types */
 import { useContext, useState } from "react";
 import { CartContext } from "../../context/CartContext";
+import QuantitySelector from "../QuantitySelector/QuantitySelector";
 import "./ProductCard.css";
 
 const ProductCard = ({ product }) => {
@@ -26,21 +27,11 @@ const ProductCard = ({ product }) => {
       <img src={product.image} alt={product.title} />
       <h3 className="product-title">{product.title}</h3>
       <p className="product-price">€{product.price}</p>
-      <div className="product-quantity-section">
-        <button className="decrement-button" onClick={decrementQuantity}>
-          -
-        </button>
-        <input
-          className="product-input"
-          type="number"
-          value={quantity}
-          readOnly
-          onChange={(e) => setQuantity(Number(e.target.value))}
-        />
-        <button className="increment-button" onClick={incrementQuantity}>
-          +
-        </button>
-      </div>
+      <QuantitySelector
+        quantity={quantity}
+        increment={incrementQuantity}
+        decrement={decrementQuantity}
+      />
       <button className="add-to-cart-button" onClick={handleAddToCart}>
         <i className="fa-solid fa-cart-plus"></i> Add to Cart
       </button>
