@@ -1,9 +1,11 @@
 /* eslint-disable react/prop-types */
-import { useState } from "react";
+import { useContext, useState } from "react";
+import { CartContext } from "../../context/CartContext";
 import "./ProductCard.css";
 
 const ProductCard = ({ product }) => {
   const [quantity, setQuantity] = useState(1);
+  const { addToCart } = useContext(CartContext);
 
   const incrementQuantity = () => {
     setQuantity((prevQuantity) => prevQuantity + 1);
@@ -16,8 +18,7 @@ const ProductCard = ({ product }) => {
   };
 
   const handleAddToCart = () => {
-    // replace later to actually update the cart context
-    console.log(`Added ${quantity} of ${product.title} to the cart.`);
+    addToCart(product, quantity);
   };
 
   return (
