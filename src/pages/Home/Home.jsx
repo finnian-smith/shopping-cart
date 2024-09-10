@@ -1,4 +1,5 @@
 /* eslint-disable react/no-unescaped-entities */
+import { Link } from "react-router-dom";
 import "./Home.css";
 
 const Home = () => {
@@ -23,9 +24,9 @@ const Home = () => {
                 Go ahead boldly - let's create unforgettable memories together
               </p>
             </div>
-            <button className="hero-button">
+            <Link to="/shop" className="hero-button">
               Shop Now <i className="fa-solid fa-arrow-right"></i>
-            </button>
+            </Link>
           </div>
         </div>
       </div>

@@ -65,6 +65,7 @@
   width: 50%;
   max-width: 150px;
   text-transform: uppercase;
+  text-decoration: none;
   color: var(--home-page-primary-text-color);
   background-color: transparent;
   display: flex;
