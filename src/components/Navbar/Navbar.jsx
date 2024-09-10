@@ -37,7 +37,16 @@ const Navbar = () => {
         </li>
         <li className="navbar-item">
           <Link to="/cart" className="navbar-link" onClick={closeMenu}>
-            <i className="fa-solid fa-cart-shopping"></i> ({totalItems})
+            <div className="navbar-cart">
+              <i className="fa-solid fa-cart-shopping"></i>
+              <span
+                className={`cart-count ${
+                  totalItems > 0 ? "cart-not-empty" : "cart-empty"
+                }`}
+              >
+                {totalItems}
+              </span>
+            </div>
           </Link>
         </li>
       </ul>
