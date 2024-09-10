@@ -9,7 +9,12 @@ const CartPage = () => {
     useContext(CartContext);
 
   if (cartItems.length == 0) {
-    return <div>Your cart is empty</div>;
+    return (
+      <div className="empty-cart">
+        <i className="fa-solid fa-cart-shopping"></i>
+        <p className="empty-cart-message">Your cart is empty</p>
+      </div>
+    );
   }
 
   return (

@@ -15,6 +15,23 @@
   gap: 10px;
 }
 
+.empty-cart {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  height: 300px;
+}
+
+.empty-cart .fa-cart-shopping {
+  font-size: 3rem;
+}
+
+.empty-cart-message {
+  font-size: 1.5rem;
+}
+
 @media screen and (min-width: 768px) {
   .cart-container {
     flex-direction: row;
