@@ -19,7 +19,9 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <div className="navbar-logo">
-        <Link to="/">Trailblazer</Link>
+        <Link to="/">
+          Cartify <i className="fa-solid fa-bag-shopping"></i>
+        </Link>
       </div>
       <div className="navbar-toggle" onClick={toggleMenu}>
         <i className="fa fa-bars"></i>
