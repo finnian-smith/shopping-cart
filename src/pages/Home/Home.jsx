@@ -1,4 +1,3 @@
-/* eslint-disable react/no-unescaped-entities */
 import { Link } from "react-router-dom";
 import "./Home.css";
 
@@ -10,19 +9,17 @@ const Home = () => {
         <div className="hero-text-container">
           <div className="main-hero-text">
             <p>
-              Expand
+              Simplify
               <br />
               Your
               <br />
-              Horizons
+              Shopping
             </p>
           </div>
           <div className="right-hero">
             <div className="sub-hero-text">
-              <p>Discover a world without borders</p>
-              <p>
-                Go ahead boldly - let's create unforgettable memories together
-              </p>
+              <p>Discover a world of endless choices</p>
+              <p>Fast, easy, and unforgettable shopping awaits</p>
             </div>
             <Link to="/shop" className="hero-button">
               Shop Now <i className="fa-solid fa-arrow-right"></i>

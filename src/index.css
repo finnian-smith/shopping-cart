@@ -8,7 +8,7 @@
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   --home-page-primary-text-color: #ffffff;
-  --home-page-background-image: url("https://images.unsplash.com/photo-1418846531910-2b7bb1043512?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  --home-page-background-image: url("https://images.unsplash.com/photo-1616080808758-b8a2fc2ec5d4?q=80&w=2574&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
   --home-page-shop-button-background-color-hover: #ffffff;
   --home-page-shop-button-text-color-hover: #000000;
 }
