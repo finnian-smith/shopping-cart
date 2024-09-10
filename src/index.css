@@ -7,8 +7,42 @@
 
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  /* Home Page */
   --home-page-primary-text-color: #ffffff;
   --home-page-background-image: url("https://images.unsplash.com/photo-1616080808758-b8a2fc2ec5d4?q=80&w=2574&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
   --home-page-shop-button-background-color-hover: #ffffff;
   --home-page-shop-button-text-color-hover: #000000;
+  /* Navbar */
+  --navbar-background-color: #333333;
+  --navbar-text-color: #ffffff;
+  --cart-empty-background-color: #ffffff;
+  --cart-empty-text-color: #333333;
+  --cart-not-empty-background-color: #ff0000;
+  --cart-not-empty-text-color: #ffffff;
+  /* Product Card */
+  --product-card-background-color: #ffffff;
+  --product-card-border: #dddddd;
+  --product-card-border-hover: #333333;
+  --add-to-cart-button-background-color: #333333;
+  --add-to-cart-button-text-color: #ffffff;
+  --add-to-cart-button-background-color-hover: #ffffff;
+  --add-to-cart-button-text-color-hover: #333333;
+  /* Quantity Selector */
+  --product-quantity-border: #dddddd;
+  --product-input-background-color: #f9f9f9;
+  --increment-decrement-background-color: #f0f0f0;
+  --increment-decrement-text-color: #333333;
+  --increment-decrement-background-color-hover: #e0e0e0;
+  /* Cart Item */
+  --cart-item-border: #dddddd;
+  --remove-item-button-background-color: #ff4d4d;
+  --remove-item-button-text-color: #ffffff;
+  --remove-item-button-background-color-hover: #e92626;
+  /* Cart Summary */
+  --cart-summary-background-color: #f9f9f9;
+  --cart-summary-border: #dddddd;
+  --checkout-button-background-color: #333333;
+  --checkout-button-text-color: #ffffff;
+  --checkout-button-background-color-hover: #ffffff;
+  --checkout-button-text-color-hover: #333333;
 }

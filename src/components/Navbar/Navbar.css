@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #333;
+  background-color: var(--navbar-background-color);
   padding: 10px 20px;
   position: relative;
   z-index: 3;
@@ -10,13 +10,13 @@
 }
 
 .navbar-logo a {
-  color: #fff;
+  color: var(--navbar-text-color);
   font-size: 1.5rem;
   text-decoration: none;
 }
 
 .navbar-toggle {
-  color: #fff;
+  color: var(--navbar-text-color);
   font-size: 1.5rem;
   cursor: pointer;
   display: block;
@@ -29,7 +29,7 @@
   top: 100%;
   left: 0;
   width: 100%;
-  background-color: #333;
+  background-color: var(--navbar-background-color);
   padding: 10px 0;
   align-items: center;
   list-style-type: none;
@@ -45,7 +45,7 @@
 }
 
 .navbar-link {
-  color: #fff;
+  color: var(--navbar-text-color);
   text-decoration: none;
   font-size: 1rem;
   position: relative;
@@ -64,7 +64,7 @@
   height: 2px;
   bottom: 0px;
   left: 0;
-  background-color: #ffffff;
+  background-color: var(--navbar-text-color);
   visibility: hidden;
   transition: all 0.3s ease-in-out;
 }
@@ -93,13 +93,13 @@
 }
 
 .cart-empty {
-  background-color: white;
-  color: black;
+  background-color: var(--cart-empty-background-color);
+  color: var(--cart-empty-text-color);
 }
 
 .cart-not-empty {
-  background-color: red;
-  color: white;
+  background-color: var(--cart-not-empty-background-color);
+  color: var(--cart-not-empty-text-color);
 }
 
 @media screen and (min-width: 768px) {
