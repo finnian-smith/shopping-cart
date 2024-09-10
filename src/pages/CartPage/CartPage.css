@@ -1,0 +1,28 @@
+.cart-page {
+  padding: 20px;
+}
+
+.cart-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 10px 0;
+}
+
+.cart-items {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .cart-container {
+    flex-direction: row;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .cart-page {
+    padding: 50px 80px;
+  }
+}

@@ -1,0 +1,49 @@
+.cart-summary {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex: 1;
+  height: fit-content;
+}
+
+.subtotal-price,
+.shipping-price,
+.grand-total-price {
+  display: flex;
+  justify-content: space-between;
+}
+
+.price-value {
+  font-weight: 600;
+}
+
+.cart-summary hr {
+  border: 1px dashed #ddd;
+  margin: 5px 0;
+}
+
+.checkout-button {
+  padding: 12px 0px;
+  border-radius: 10px;
+  border: 1px solid black;
+  background-color: black;
+  color: white;
+  margin: 10px 0;
+  transition: background-color 0.3s;
+  cursor: pointer;
+}
+
+.checkout-button:hover {
+  color: black;
+  background-color: white;
+}
+
+@media screen and (min-width: 768px) {
+  .cart-summary {
+    flex-basis: 30%;
+  }
+}
